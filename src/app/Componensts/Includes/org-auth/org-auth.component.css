@@ -1,0 +1,30 @@
+.user-auth{
+    min-height: 80vh;
+  padding: 7rem 9% 6rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.user-auth h1{
+    margin-top: 50px;
+    color: #BCF000;
+    margin-bottom: 3rem;
+}
+.common-form a{
+    color: #BCF000;
+    cursor: pointer;
+
+}
+.form-button{
+    margin-bottom: 3rem;
+    background-color: #BCF000;
+    
+}
+p{
+    font-size: 1.5rem;
+}
+
+input{
+   
+    padding-left: 2rem;
+}

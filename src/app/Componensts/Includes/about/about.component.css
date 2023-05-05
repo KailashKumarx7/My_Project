@@ -1,0 +1,61 @@
+.about{
+    min-height: 100vh;
+    padding: 4rem 7% 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: rgb(33, 32, 32);
+}
+
+.about-img img{
+    width: 40vw;
+}
+span{
+    color:#BCF000
+  }
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    text-decoration: none;
+    color: white;
+}
+
+
+.about-content h3{
+    font-size: 2.6rem;
+    color: white;
+}
+
+
+.about-content p{
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem;
+    color: white;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: .6rem 2rem;
+    background: #BCF000;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #BCF000;
+    font-size: 1.3rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-top: 4rem;
+  
+  }
+  
+  .btn:hover{
+    box-shadow: none;
+  }

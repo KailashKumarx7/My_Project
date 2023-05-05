@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+
+:root {
+  /* fonts */
+  --font-nunito-sans: "Nunito Sans";
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f7fa;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 1.25rem 0 1.25rem 0;
+  box-shadow: 0 .25rem .5rem #e6edef;
+  color: #495057;
+}
+
+.card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card-head {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #edf1f7;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.common-form {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 27rem;
+
+}
+
+.form-input {
+  height: 30px;
+  margin-bottom: 2.5rem;
+  padding: 1.3rem 1%;
+  border: 0;
+  color: #000000;
+
+}
+
+input {
+  border-radius: 0.5rem;
+}
+
+.form-button {
+  border-radius: 1rem;
+  padding: .6rem 2rem;
+  border: none;
+  cursor: pointer;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  box-shadow: 0 0 1rem #BCF000;
+}
+
+.form-button:hover {
+  box-shadow: none;
+}
+
+.error-p {
+  color: red;
+}
+
+.message-p {
+  color: green;
+  text-align: center;
+}
+
+.carousel-caption {
+  background-color: #0000009e;
+  border-radius: 5px;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.invalid-input {
+  color: red;
+  font: 12px;
+  margin-top: -20px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.max-width {
+  width: 100%;
+}
+
+p {
+  color: rgb(70, 64, 64);
+}

@@ -1,0 +1,119 @@
+/* Request Demo Section */
+/* .request-demo {
+  min-height: 80vh;
+  padding: 7rem 9% 6rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    padding: 2rem;
+    background-color: transparent;
+  }
+  
+  .demo h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .demo form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .demo label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .demo input,
+  .demo textarea {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .demo textarea {
+    height: 150px;
+  }
+  
+  .btn-submit {
+    padding: 0.5rem 1rem;
+    background-color: #e6b800;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+   */
+
+   .demo-req-form{
+    min-height: 70vh;
+    padding: 7rem 5% 4rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.demo-req-form h1{
+    margin-top: 50px;
+    color: #BCF000;
+    margin-bottom: 3rem;
+}
+.common-form a{
+    color: #BCF000;
+    cursor: pointer;
+
+}
+.form-button{
+    margin-bottom: 3rem;
+    background-color: #BCF000;
+    
+}
+p{
+    font-size: 1.5rem;
+}
+
+input{
+   
+    padding-left: 2rem;
+}
+
+
+ textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.dropdown-input {
+  position: relative;
+}
+.dropdown-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+label{
+  display: flex;
+  color: white;
+}
+
+select{
+  padding-left: 3rem;
+  height: 40px;
+  padding: .5rem 5%;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.phonenumber{
+  margin-bottom: 1rem;
+}
