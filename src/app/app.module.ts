@@ -77,7 +77,7 @@ import { CdkMenuModule } from '@angular/cdk/menu';
     FontAwesomeModule,
     OverlayModule,
     CdkMenuModule,
-    CommonModule,
+    CommonModule
 
     
   ],

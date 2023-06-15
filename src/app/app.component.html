@@ -1,24 +1,15 @@
-<div style="display:none" class="main-container">
-    <app-header></app-header>
-    <div class="scrollable-content">
-      <router-outlet></router-outlet>
-    </div>
-    <app-footer></app-footer>
+<div *ngIf="!isLoggedIn" class="main-container">
+  <app-header></app-header>
+  <div style=" background-color: black;" class="scrollable-content">
+    <app-main></app-main>
   </div>
+  <app-footer></app-footer>
+</div>
 
 
-  <div class="dashboard-container">
-    <app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<div *ngIf="isLoggedIn" class="dashboard-container">
+  <app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
 
-    <app-d-header
-    [collapsed]="isSideNavcollapsed"
-    [screenWidth]="screenWidth"
-    ></app-d-header>
-    <app-body
-    [collapsed]="isSideNavcollapsed"
-    [screenWidth]="screenWidth"
-    ></app-body>
-  </div>
-  
-
-  
+  <app-d-header [collapsed]="isSideNavcollapsed" [screenWidth]="screenWidth"></app-d-header>
+  <app-body [collapsed]="isSideNavcollapsed" [screenWidth]="screenWidth"></app-body>
+</div>
