@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent {
+  admitionForm: any;
 
 }

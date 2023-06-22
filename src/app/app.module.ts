@@ -5,12 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
-import { RequestDemoComponent } from './Componensts/Includes/request-demo/request-demo.component';
-import { HeaderComponent } from './Componensts/Includes/header/header.component';
-import { FooterComponent } from './Componensts/Includes/footer/footer.component';
-import { OrgAuthComponent } from './Componensts/Includes/org-auth/org-auth.component';
-import { MainComponent } from './Componensts/Includes/main/main.component';
-import { AboutComponent } from './Componensts/Includes/about/about.component';
+import { RequestDemoComponent } from './Componensts/public-auth/Pages/request-demo/request-demo.component';
+import { HeaderComponent } from './Componensts/public-auth/Pages/header/header.component';
+import { FooterComponent } from './Componensts/public-auth/Pages/footer/footer.component';
+import { OrgAuthComponent } from './Componensts/public-auth/Pages/org-auth/org-auth.component';
+import { MainComponent } from './Componensts/public-auth/Pages/main/main.component';
+import { AboutComponent } from './Componensts/public-auth/Pages/about/about.component';
 import { SidenavComponent } from './Componensts/Dashboard/sidenav/sidenav.component';
 import { MemberComponent } from './Componensts/Dashboard/member/member.component';
 import { BodyComponent } from './Componensts/Dashboard/body/body.component';
@@ -33,6 +33,11 @@ import { CommonModule } from '@angular/common';
 
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { publicAuthModule } from './Componensts/public-auth/public-auth.module';
 
 
 
@@ -77,7 +82,14 @@ import { CdkMenuModule } from '@angular/cdk/menu';
     FontAwesomeModule,
     OverlayModule,
     CdkMenuModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    publicAuthModule
+
+    
 
     
   ],

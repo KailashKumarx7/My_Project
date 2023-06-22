@@ -1,13 +1,20 @@
 <div class="container">
-    <form [formGroup]="admitionForm">
-        <div class="row">
-            <div formGroupName="memberDetail" class="col-md-8">
-                <div class="row">
+    <form [formGroup]="myForm">
+        <div id="farmer_entry">
+            <div class="row md-2">
+                <div class="col-md-8">
                     <legend class="text-start" id="title1">
                         Admission Form.
                     </legend>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4">
+                    <legend class="text-start" id="title1">
+                        Monthly Measurement.
+                    </legend>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -15,44 +22,46 @@
                         <label for="">Name</label>
                     </div>
                     <div class="col-sm-3">
-                        <input 
-                        ngModel
-                        formControlName="First_name"
-                        type="text" 
-                        class="form-control" 
-                        id="first_name_id" 
-                        placeholder="First name" 
-                        required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <input 
-                        formControlName="Middle_name"
-                        type="text" 
-                        class="form-control" 
-                        id="middle_name_id" 
-                        placeholder="Middle name" 
-                        required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Middle name" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <input 
-                        formControlName="Last_name"
-                        type="text" 
-                        class="form-control" 
-                        id="last_name_id" 
-                        placeholder="Last name" 
-                        required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Last name" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+    
+                <div class="col-md-4 row">
+                    <div class="col-sm-8">
+                        <label for="">Interested in body measurements?</label>
+                    </div>
+                    <div class="col-sm-2 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="col-sm-2 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            No
+                        </label>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -60,14 +69,7 @@
                         <label for="">Email Id</label>
                     </div>
                     <div class="col-sm-5">
-                        <input
-                        formControlName="Email" 
-                        type="text" 
-                        name="Email"
-                        class="form-control" 
-                        id="email_id" 
-                        placeholder="Enter Email" 
-                        required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Email" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -76,21 +78,30 @@
                         <label for="">Number</label>
                     </div>
                     <div class="col-sm-3">
-                        <input 
-                        formControlName="Number"
-                        type="text" 
-                        class="form-control" 
-                        name="Number"
-                        id="phone_number_id" 
-                        placeholder="Number" 
-                        required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Number" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
     
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+                    <div class="col-sm-3">
+                        <label for="">Weight</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="">Chest</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -98,12 +109,11 @@
                         <label for="">Nationality</label>
                     </div>
                     <div class="col-sm-3">
-                        <select class="form-control" id="validationCustom01" required>
-                            <option value="" disabled selected>Select Country</option>
-                            <option value="country1">Country 1</option>
-                            <option value="country2">Country 2</option>
-                            <option value="country3">Country 3</option>
-                        </select>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Select Country"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
                     <div class="col-sm-2">
                         <label style="font-size: large; font-weight: bold;" for="">Date of Birth</label>
@@ -116,7 +126,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+                    <div class="col-sm-3">
+                        <label for="">Biceps</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="">Shoulder</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -141,7 +167,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+                    <div class="col-sm-3">
+                        <label for="">Fore Arms</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="">Upper Abs</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -166,7 +208,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+                    <div class="col-sm-3">
+                        <label for="">Lower Abs</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="">Hip</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -190,7 +248,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+                    <div class="col-sm-3">
+                        <label for="">Thigh</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="">Calf</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -214,7 +288,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+    
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -228,8 +307,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 row">
+    
+                </div>
+            </div>
+            <div class="row mb-1">
                 <label style="font-size: large; font-weight: bold;" for="">Permanent Address:</label>
-                <div class="row mb-2">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -263,7 +347,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+    
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -277,8 +366,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 row">
+    
+                </div>
+            </div>
+            <div class="row mb-1">
                 <label style="font-size: large; font-weight: bold;" for="">Temporary Address:</label>
-                <div class="row mb-2">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
     
                     </div>
@@ -312,7 +406,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="col-md-4 row">
+    
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-md-8 row">
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-1">
@@ -325,101 +424,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                </div>
             </div>
-            <div formGroupName="memberBodyDetail" class="col-md-4">
-                <legend class="text-start" id="title1">
-                    Monthly Measurement.
-                </legend>
-                <div class="row mb-3">
-                    <div class="col-sm-8">
-                        <label for="">Interested in body measurements?</label>
-                    </div>
-                    <div class="col-sm-2 form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="col-sm-2 form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            No
-                        </label>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <label for="">Weight</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="">Chest</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <label for="">Biceps</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="">Shoulder</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <label for="">Fore Arms</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="">Upper Abs</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <label for="">Lower Abs</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="">Hip</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-sm-3">
-                        <label for="">Thigh</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div class="col-sm-2">
-                        <label for="">Calf</label>
-                    </div>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                
-            </div>
+            <button class="btn btn-outline-success" id="submitbtn">Submit</button>
         </div>
     </form>
-    
 </div>

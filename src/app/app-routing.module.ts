@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RequestDemoComponent } from './Componensts/Includes/request-demo/request-demo.component';
-import { MainComponent } from './Componensts/Includes/main/main.component';
-import { AboutComponent } from './Componensts/Includes/about/about.component';
-import { OrgAuthComponent } from './Componensts/Includes/org-auth/org-auth.component';
+import { RequestDemoComponent } from './Componensts/public-auth/Pages/request-demo/request-demo.component';
+import { MainComponent } from './Componensts/public-auth/Pages/main/main.component';
+import { AboutComponent } from './Componensts/public-auth/Pages/about/about.component';
+import { OrgAuthComponent } from './Componensts/public-auth/Pages/org-auth/org-auth.component';
 import { DashboardComponent } from './Componensts/Dashboard/dashboard/dashboard.component';
 import { TodayActionComponent } from './Componensts/Dashboard/today-action/today-action.component';
 import { InqueryComponent } from './Componensts/Dashboard/inquery/inquery.component';
@@ -20,11 +20,11 @@ import { SalesHistoryComponent } from './Componensts/Dashboard/sales-history/sal
 
 
 const routes: Routes = [
-  { path:'main',component:MainComponent},
+  { path:'',component:MainComponent},
   { path:'login',component:OrgAuthComponent},
   { path:'demo',component:RequestDemoComponent},
   { path:'about',component:AboutComponent},
-  {path:'', redirectTo:'dashboard', pathMatch:'full'},
+  {path:'d', redirectTo:'dashboard', pathMatch:'full'},
   { path:'dashboard',component:DashboardComponent},
   {path:'todayaction',component:TodayActionComponent},
   {path:'inquiry',component:InqueryComponent},

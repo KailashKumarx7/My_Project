@@ -14,7 +14,7 @@
                     [cdkMenuTriggerFor]="searchOverlay"
                     class="search-menu-btn ripple"
                     >
-                    <fa-icon [icon]="searchicon" class="search-icon"></fa-icon>
+                    <fa-icon [icon]="searchicon" class="fa-icon"></fa-icon>
                     </button>
                 </div>
             </div>
@@ -22,8 +22,8 @@
         <div class="head-content-right">
             <div class="head-menu">
                 <div class="head-menu-item">
-                    <button class="head-menu-item-btn ripple">
-                        <img src="../../../../assets/images/nepal-flag.png" alt="" class="flag" alt="flag">
+                    <button class="head-menu-item-btn ripple" [cdkMenuTriggerFor]="languageOverlay">
+                        <img [src]="'../../../../../../assets/images/'+selectedLanguage.flag+'.png'" alt="" class="flag" alt="flag">
                     </button>
                 </div>
                 <div class="head-menu-item">
@@ -32,7 +32,7 @@
                     </button>
                 </div>
                 <div class="head-menu-item">
-                    <button class="head-menu-item-btn ripple">
+                    <button class="head-menu-item-btn ripple" [cdkMenuTriggerFor]="notificationOverlay">
                         <fa-icon class="menu-icon" [icon]="bellicon"></fa-icon>
                     </button>
                 </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="head-user-avatar-container">
-                <div class="head-user-avatar">
+                <div class="head-user-avatar" [cdkMenuTriggerFor]="userOverlay">
                     <img src="../../../../assets/images/avatar-mypic.jpeg" class="user-avatar" >
                     <div class="circle-indicator pluse">  
                     </div>
@@ -58,7 +58,59 @@
     <div class="overlay overlay-search overlay-fall" cdkMenu>
         <input type="search" class="search" name="" id="" placeholder="Search....">
         <button class="search-btn">
-            <fa-icon [icon]="searchicon" class="search-icon"></fa-icon>
+            <fa-icon [icon]="searchicon" class="fa-icon"></fa-icon>
         </button>
+    </div>
+</ng-template>
+
+<ng-template #languageOverlay>
+    <div class="overlay overlay-language overlay-fall" cdkMenu>
+        <ul>
+            <li *ngFor="let lang of languages" cdkMenuItem>
+                <img [src]="'../../../../../../assets/images/'+lang.flag+'.png'" alt="flag">
+                <span>{{lang.language}}</span>
+            </li>
+        </ul>
+    </div>
+</ng-template>
+
+<ng-template #notificationOverlay>
+    <div class="overlay overlay-notification overlay-fall" cdkMenu>
+        <ul>
+            <li class="notification-head-container">
+                <div class="notification-head">Notification</div>
+                <span class="view-all-link">
+                    <a>View All</a>
+                </span>
+            </li>
+            <li class="notification-message-container"
+                *ngFor="let notification of notifications"
+                cdkMenuItem>
+                <fa-icon [icon]="notification.icon" class="fa-icon"></fa-icon>
+                <div>
+                    <div class="notification-subject">
+                        {{notification.subject}}
+                    </div>
+                    <p class="notification-desc">
+                        {{notification.description}}
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</ng-template>
+
+
+<ng-template #userOverlay>
+    <div class="overlay overlay-user overlay-fall" cdkMenu>
+        <ul>
+            <li *ngFor="let item of userItems" cdkMenuItem>
+                <a>
+                    <fa-icon [icon]="item.icon" class="fa-icon"></fa-icon>
+                    <span>{{item.label}}</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </ng-template>
